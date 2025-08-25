@@ -1,0 +1,98 @@
+.footer {
+    padding-top: 115px;
+    background-color: #DB6885;
+
+    .footer__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        padding-bottom: 115px;
+
+        .footer__info {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .footer__contacts {
+
+                .phone__number {
+                    display: flex;
+                    gap: 10px;
+
+                    h2 {
+                        font-family: "Figtree";
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #fff;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .footer__social {
+                display: flex;
+                gap: 20px;
+
+                .footer__social-link {
+                    height: 39px;
+
+                    img {
+                        background: rgba(255, 255, 255, 0.1);
+                        padding: 10px;
+                        border-radius: 50%;
+
+                        &:hover {
+                            background: rgba(255, 255, 255, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__links {
+
+            h2 {
+                font-family: "Fredoka";
+                font-weight: 500;
+                font-size: 20px;
+                color: #fff;
+                margin: 0;
+                margin-bottom: 24px;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .footer__link {
+                    font-family: "Figtree";
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #fff;
+                    text-decoration: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__legal {
+
+        h2 {
+            margin: 0;
+            padding: 15px 0;
+            text-align: center;
+            font-family: "Figtree";
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}

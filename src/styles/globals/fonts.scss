@@ -1,0 +1,347 @@
+/* =========================
+   Figtree - Light
+   ========================= */
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* =========================
+   Figtree - Regular
+   ========================= */
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* =========================
+   Figtree - Medium
+   ========================= */
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* =========================
+   Figtree - SemiBold
+   ========================= */
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* =========================
+   Figtree - Bold
+   ========================= */
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* =========================
+   Figtree - ExtraBold
+   ========================= */
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* =========================
+   Figtree - Black
+   ========================= */
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree/Figtree-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* =========================
+   Fredoka - Regular Family
+   ========================= */
+@font-face {
+    font-family: 'Fredoka';
+    src: url('/assets/fonts/Fredoka/Fredoka-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('/assets/fonts/Fredoka/Fredoka-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('/assets/fonts/Fredoka/Fredoka-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('/assets/fonts/Fredoka/Fredoka-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('/assets/fonts/Fredoka/Fredoka-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* =========================
+   Fredoka - Condensed
+   ========================= */
+@font-face {
+    font-family: 'Fredoka Condensed';
+    src: url('/assets/fonts/Fredoka/Fredoka_Condensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka Condensed';
+    src: url('/assets/fonts/Fredoka/Fredoka_Condensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka Condensed';
+    src: url('/assets/fonts/Fredoka/Fredoka_Condensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka Condensed';
+    src: url('/assets/fonts/Fredoka/Fredoka_Condensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka Condensed';
+    src: url('/assets/fonts/Fredoka/Fredoka_Condensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* =========================
+   Fredoka - Expanded
+   ========================= */
+@font-face {
+    font-family: 'Fredoka Expanded';
+    src: url('/assets/fonts/Fredoka/Fredoka_Expanded-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka Expanded';
+    src: url('/assets/fonts/Fredoka/Fredoka_Expanded-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka Expanded';
+    src: url('/assets/fonts/Fredoka/Fredoka_Expanded-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka Expanded';
+    src: url('/assets/fonts/Fredoka/Fredoka_Expanded-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka Expanded';
+    src: url('/assets/fonts/Fredoka/Fredoka_Expanded-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* =========================
+   Fredoka - SemiCondensed
+   ========================= */
+@font-face {
+    font-family: 'Fredoka SemiCondensed';
+    src: url('/assets/fonts/Fredoka/Fredoka_SemiCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka SemiCondensed';
+    src: url('/assets/fonts/Fredoka/Fredoka_SemiCondensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka SemiCondensed';
+    src: url('/assets/fonts/Fredoka/Fredoka_SemiCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka SemiCondensed';
+    src: url('/assets/fonts/Fredoka/Fredoka_SemiCondensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka SemiCondensed';
+    src: url('/assets/fonts/Fredoka/Fredoka_SemiCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* =========================
+   Fredoka - SemiExpanded
+   ========================= */
+@font-face {
+    font-family: 'Fredoka SemiExpanded';
+    src: url('/assets/fonts/Fredoka/Fredoka_SemiExpanded-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka SemiExpanded';
+    src: url('/assets/fonts/Fredoka/Fredoka_SemiExpanded-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka SemiExpanded';
+    src: url('/assets/fonts/Fredoka/Fredoka_SemiExpanded-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka SemiExpanded';
+    src: url('/assets/fonts/Fredoka/Fredoka_SemiExpanded-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka SemiExpanded';
+    src: url('/assets/fonts/Fredoka/Fredoka_SemiExpanded-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

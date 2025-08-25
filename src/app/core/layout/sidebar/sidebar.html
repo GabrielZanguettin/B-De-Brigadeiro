@@ -1,0 +1,20 @@
+<div class="sidebar__overlay" *ngIf="isOpen" (click)="onBackdropClick($event)">
+  <div class="sidebar__content" (click)="$event.stopPropagation()">
+    <header class="sidebar__header">
+      <img class="sidebar__logo" src="assets/b-de-brigadeiro-logo.png" alt="B de Brigadeiro">
+      <button class="sidebar__close" type="button" (click)="onClose()">
+        <img src="assets/close.svg" alt="">
+      </button>
+    </header>
+
+    <nav class="sidebar__nav">
+      <a class="sidebar__link sidebar__link--home" (click)="onClose()">Página inicial</a>
+      <a class="sidebar__link sidebar__link--financas" (click)="onClose()">Finanças</a>
+      <a class="sidebar__link sidebar__link--menu" (click)="onClose()">Menu</a>
+    </nav>
+
+    <div class="sidebar__actions">
+      <button class="btn btn--outline" (click)="onClose()">Entre em contato</button>
+    </div>
+  </div>
+</div>

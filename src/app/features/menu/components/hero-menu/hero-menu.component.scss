@@ -1,0 +1,40 @@
+.hero {
+    padding: 115px 0;
+
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        .hero__breadcrumb {
+            display: flex;
+            gap: 7px;
+
+            .hero__breadcrumb-item,
+            .hero__breadcrumb-separator {
+                font-family: "Fredoka";
+                font-weight: 600;
+                font-size: 28px;
+                margin: 0;
+            }
+
+            .hero__breadcrumb-item {
+                color: #707070;
+            }
+
+            .hero__breadcrumb-separator,
+            .hero__breadcrumb-item--active {
+                color: #DB6885;
+            }   
+        }
+
+        .hero__title {
+            font-family: "Figtree";
+            font-weight: 600;
+            font-size: 70px;
+            color: #2F3137;
+            margin: 0;
+        }
+    }
+}
