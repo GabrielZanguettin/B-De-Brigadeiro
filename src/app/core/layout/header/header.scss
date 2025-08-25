@@ -1,0 +1,79 @@
+.header {
+    font-family: "Figtree";
+    font-weight: 400;
+    background: #FFF4F5;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    height: 115px;
+    position: relative;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    margin: 0 auto;
+
+    .nav__link {
+        text-decoration: none;
+        color: #2F3137;
+    }
+
+    .nav__link--home:hover,
+    .nav__link--financas:hover,
+    .nav__link--menu:hover,
+    .nav__link--login:hover {
+        color: #DB6885;
+        text-decoration: underline;
+    }
+
+    .nav__link--contact {
+        display: flex;
+        align-items: center;
+        font-family: "Figtree";
+        font-weight: 400;
+        padding: 0 24px;
+        border: 1px solid black;
+        border-radius: 32px;
+        cursor: pointer;
+        background: transparent;
+        height: 39px;
+    }
+}
+
+.hamburger__button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    position: absolute;
+    right: 30px;
+}
+
+
+@media (max-width: 1024px) {
+
+    .desktop__menu,
+    .logo {
+        display: none;
+    }
+
+    .hamburger__button {
+        display: flex;
+    }
+
+}

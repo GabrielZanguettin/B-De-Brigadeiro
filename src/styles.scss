@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@use './styles/globals/fonts' as font-definitions;
+
+body {
+    margin: 0;
+}
+
+.container {
+  max-width: 1200px;  /* largura máxima */
+  margin: 0 auto;     /* centraliza */
+  padding: 0 24px;    /* respiro lateral para mobile */
+}
