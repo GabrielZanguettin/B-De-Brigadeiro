@@ -1,83 +1,20 @@
 <section class="popular__products">
-  <div class="container popular__products__content">
-    <h3 class="section__subtitle">Menu popular</h3>
-    <h2 class="section__title">Doces mais populares</h2>
+    <div class="container popular__products__content">
+        <h3 class="section__subtitle">Menu popular</h3>
+        <h2 class="section__title">Doces mais populares</h2>
 
-    <div class="product__grid">
-        <div class="product">
-            <div class="product__image">
-                <img src="assets/brigadeiro-classico.jfif" alt="Imagem do brigadeiro clássico">
-            </div>
-            <div class="product__infos">
-                <h3 class="product__name">Clássico</h3>
-                <p class="product__price">R$3,00</p>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__image">
-                <img src="assets/brigadeiro-de-beijinho.jfif" alt="Imagem do brigadeiro de beijinho">
-            </div>
-            <div class="product__infos">
-                <h3 class="product__name">Beijinho</h3>
-                <p class="product__price">R$3,00</p>
+        <div class="product__grid">
+            <div class="product" *ngFor="let product of products">
+                <div class="product__image">
+                    <img src="{{ product.path }}" alt="Imagem do brigadeiro clássico">
+                </div>
+                <div class="product__infos">
+                    <h3 class="product__name">{{ product.name }}</h3>
+                    <p class="product__price">{{ product.price }}</p>
+                </div>
             </div>
         </div>
-        <div class="product">
-            <div class="product__image">
-                <img src="assets/brigadeiro-de-churros.jfif" alt="Imagem do brigadeiro de churros">
-            </div>
-            <div class="product__infos">
-                <h3 class="product__name">Churros</h3>
-                <p class="product__price">R$3,00</p>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__image">
-                <img src="assets/brigadeiro-de-m&m.jfif" alt="Imagem do brigadeiro de confete">
-            </div>
-            <div class="product__infos">
-                <h3 class="product__name">Confete</h3>
-                <p class="product__price">R$3,00</p>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__image">
-                <img src="assets/brigadeiro-de-oreo.jfif" alt="Imagem do brigadeiro de óreo">
-            </div>
-            <div class="product__infos">
-                <h3 class="product__name">Óreo</h3>
-                <p class="product__price">R$3,00</p>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__image">
-                <img src="assets/brigadeiro-de-pacoca.jfif" alt="Imagem do brigadeiro de paçoca">
-            </div>
-            <div class="product__infos">
-                <h3 class="product__name">Paçoca</h3>
-                <p class="product__price">R$3,00</p>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__image">
-                <img src="assets/brigadeiro-ninho-nutella.jfif" alt="Imagem do brigadeiro de ninho com nutella">
-            </div>
-            <div class="product__infos">
-                <h3 class="product__name">Ninho com nutella</h3>
-                <p class="product__price">R$3,00</p>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__image">
-                <img src="assets/brigadeiro-ovomaltine.jfif" alt="Imagem do brigadeiro de ovomaltine">
-            </div>
-            <div class="product__infos">
-                <h3 class="product__name">Ovomaltine</h3>
-                <p class="product__price">R$3,00</p>
-            </div>
-        </div>
+
+        <button class="btn__outline">Ver todo o menu</button>
     </div>
-
-    <button class="btn__outline">Ver todo o menu</button>
-  </div>
 </section>

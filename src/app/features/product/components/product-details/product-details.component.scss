@@ -1,0 +1,65 @@
+.product-details {
+    background: #FFF4F5;
+    padding-bottom: 115px;
+
+    .product-details__container {
+        display: flex;
+
+        .product-details__image {
+            width: 468px;
+            height: 628px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .product-details__content {
+            margin-left: 120px;
+            
+            .product-details__header {
+
+                .product-details__name {
+                    font-family: "Figtree";
+                    font-weight: 600;
+                    font-size: 70px;
+                    color: #2F3137;
+                }
+            }
+
+            .product-details__infos {
+
+                .product-details__price {
+
+                    .product-details__price-label {
+                        font-family: "Figtree";
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: #2F3137;
+                        margin: 0;
+                    }
+
+                    .product-details__price-value {
+                        font-family: "Fredoka";
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: #DB6885;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .product-details__description {
+
+                .product-details__description-title {
+                    font-family: "Figtree";
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: #2F3137;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
