@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from '../../../../shared';
 
 @Component({
   selector: 'app-hero-product',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './hero-product.component.scss'
 })
 export class HeroProductComponent {
-
+  @Input() product!: Product;
 }

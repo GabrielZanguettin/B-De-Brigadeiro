@@ -1,2 +1,7 @@
-<app-hero-product></app-hero-product>
-<app-product-details></app-product-details>
+<ng-container *ngIf="product as p">
+  <app-hero-product [product]="p"></app-hero-product>
+  <app-product-details [product]="p"></app-product-details>
+</ng-container>
+
+
+<app-popular-products></app-popular-products>

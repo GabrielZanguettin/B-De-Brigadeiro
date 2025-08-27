@@ -4,6 +4,7 @@
 
     .product-details__container {
         display: flex;
+        gap: 120px;
 
         .product-details__image {
             width: 468px;
@@ -12,12 +13,13 @@
             img {
                 width: 100%;
                 height: 100%;
+                border-radius: 10px;
             }
         }
 
         .product-details__content {
-            margin-left: 120px;
-            
+            max-width: 564px;
+
             .product-details__header {
 
                 .product-details__name {
@@ -25,12 +27,15 @@
                     font-weight: 600;
                     font-size: 70px;
                     color: #2F3137;
+                    margin: 0;
+                    margin-bottom: 2rem;
                 }
             }
 
             .product-details__infos {
 
                 .product-details__price {
+                    margin-bottom: 32px;
 
                     .product-details__price-label {
                         font-family: "Figtree";
@@ -51,6 +56,9 @@
             }
 
             .product-details__description {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
 
                 .product-details__description-title {
                     font-family: "Figtree";
@@ -59,7 +67,76 @@
                     color: #2F3137;
                     margin: 0;
                 }
+
+                .product-details__description-text {
+                    font-family: "Figtree";
+                    font-weight: 300;
+                    font-size: 16px;
+                    color: #707070;
+                    margin: 0;
+                }
             }
+
+            .product-details__stock {
+
+                .product-details__stock-wrapper {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 24px;
+                    gap: 12px;
+
+                    .product-details__stock-label {
+                        font-family: "Figtree";
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: #2F3137;
+                        margin: 0;
+                    }
+
+                    .product-details__quantity {
+                        display: flex;
+                        align-items: center;
+
+                        .product-details__btn--decrement,
+                        .product-details__btn--increment {
+                            background: transparent;
+                            padding: 14px 18px;
+                            border: none;
+                            cursor: pointer;
+                        }
+
+                        .product-details__btn--increment {
+                            border: 1px solid #C8CCDB;
+                            border-radius: 0px 4px 4px 0px;
+                        }
+
+                        .product-details__btn--decrement {
+                            border: 1px solid #EDECEC;
+                            border-radius: 4px 0px 0px 4px;
+                        }
+
+                        .product-details__quantity-value {
+                            font-family: "Figtree";
+                            font-weight: 600;
+                            font-size: 22px;
+                            color: #343434;
+                            padding: 8px 11px;
+                            border-left: 1px solid #C8CCDB;
+                            border-top: 1px solid #C8CCDB;
+                            border-bottom: 1px solid #C8CCDB;
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media (max-width: 1220px) {
+        .product-details__container {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

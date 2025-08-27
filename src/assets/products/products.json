@@ -1,0 +1,74 @@
+[
+  {
+    "base": "brigadeiro-classico",
+    "widths": [
+      320,
+      640,
+      960,
+      1200
+    ]
+  },
+  {
+    "base": "brigadeiro-de-beijinho",
+    "widths": [
+      320,
+      640,
+      960,
+      1200
+    ]
+  },
+  {
+    "base": "brigadeiro-de-churros",
+    "widths": [
+      320,
+      640,
+      960,
+      1200
+    ]
+  },
+  {
+    "base": "brigadeiro-de-mem",
+    "widths": [
+      320,
+      640,
+      960,
+      1200
+    ]
+  },
+  {
+    "base": "brigadeiro-de-oreo",
+    "widths": [
+      320,
+      640,
+      960,
+      1200
+    ]
+  },
+  {
+    "base": "brigadeiro-de-pacoca",
+    "widths": [
+      320,
+      640,
+      960,
+      1200
+    ]
+  },
+  {
+    "base": "brigadeiro-ninho-nutella",
+    "widths": [
+      320,
+      640,
+      960,
+      1200
+    ]
+  },
+  {
+    "base": "brigadeiro-ovomaltine",
+    "widths": [
+      320,
+      640,
+      960,
+      1200
+    ]
+  }
+]

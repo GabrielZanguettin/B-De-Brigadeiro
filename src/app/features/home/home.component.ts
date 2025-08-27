@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PopularProductsComponent } from './components/popular-products/popular-products.component';
+import { PopularProductsComponent } from '../../shared/components/popular-products/popular-products.component';
 import { HeroHeaderComponent } from './components/hero/hero-header.component';
 
 @Component({
