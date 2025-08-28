@@ -3,5 +3,8 @@ export interface Product {
   name: string;
   price: string;
   slug: string;
-  base: string; // p/ imagens responsivas
+  base: string;
+  description: string;
 }
+
+export interface ProductLike { slug: string; }

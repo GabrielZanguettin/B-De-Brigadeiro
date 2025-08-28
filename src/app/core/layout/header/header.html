@@ -1,15 +1,18 @@
-<header class="header">
+<header class="header" [ngClass]="{ 'header--white': headerCfg.backgroundWhite }">
     <div class="container header__container">
         <div class="logo" *ngIf="!headerCfg.hideLogo">
             <img class="logo__image" src="assets/b-de-brigadeiro-logo.png" alt="Logo B de Brigadeiro">
         </div>
         <nav class="nav__menu desktop__menu">
-            <a href="" class="nav__link nav__link--home">Página inicial</a>
-            <a href="" class="nav__link nav__link--financas">Finanças</a>
-            <a href="" class="nav__link nav__link--menu">Menu</a>
-            <a href="" class="nav__link nav__link--login">Login</a>
-            <a href="" class="nav__link nav__link--contact">Entre em contato</a>
+            <a class="nav__link nav__link--home" [attr.href]="nav.href(nav.homeLink())">Página inicial</a>
+
+            <a class="nav__link nav__link--menu" [attr.href]="nav.href(nav.menuLink())">Menu</a>
+
+            <a class="nav__link nav__link--login" [attr.href]="nav.href(['/login'])">Login</a>
+
+            <a class="nav__link nav__link--contact" [attr.href]="nav.href(['/contato'])">Entre em contato</a>
         </nav>
+
         <button class="hamburger__button" (click)="onHamburgerClick()">
             <img src="assets/bars.svg" alt="">
         </button>

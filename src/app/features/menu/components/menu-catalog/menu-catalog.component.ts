@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { NavigatorService } from '../../../../shared/services/navigator.service';
 
 @Component({
   selector: 'app-menu-catalog',
@@ -10,8 +11,8 @@ import { Router } from '@angular/router';
   styleUrl: './menu-catalog.component.scss'
 })
 export class MenuCatalogComponent {
-  constructor(private router: Router) {}
-  
+  constructor(public nav: NavigatorService) { }
+
   products = [
     { id: 12345, name: 'Clássico', price: 'R$3,00', slug: 'brigadeiro-classico-12345', base: 'brigadeiro-classico' },
     { id: 17143, name: 'Beijinho', price: 'R$3,00', slug: 'brigadeiro-de-beijinho-17143', base: 'brigadeiro-de-beijinho' },
@@ -23,7 +24,7 @@ export class MenuCatalogComponent {
     { id: 11110, name: 'Ovomaltine', price: 'R$3,00', slug: 'brigadeiro-de-ovomaltine-11110', base: 'brigadeiro-ovomaltine' },
   ];
 
-  goToProduct(product: any) {
-    this.router.navigate(['/', product.slug, 'b']);
+  goToProduct(product: { slug: string }) {
+    this.nav.hard(this.nav.productLink(product.slug)); // full reload
   }
 }
