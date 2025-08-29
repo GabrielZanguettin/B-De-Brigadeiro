@@ -8,3 +8,10 @@ export interface Product {
 }
 
 export interface ProductLike { slug: string; }
+
+export type PageTransitionOpts = {
+  enterMs: number;
+  exitMs: number;
+  offsetPx: number;
+  delayInMs: number;
+};
