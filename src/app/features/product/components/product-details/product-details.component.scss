@@ -139,4 +139,62 @@
             align-items: center;
         }
     }
+
+    @media (max-width: 500px) {
+        padding-bottom: 75px;
+
+        .product-details__container {
+            gap: 40px;
+
+            .product-details__image {
+                height: 443px;
+                width: 343px;
+            }
+
+            .product-details__content {
+
+                .product-details__header {
+
+                    .product-details__name {
+                        font-size: 38px;
+                    }   
+                }
+
+                .product-details__infos {
+                    .product-details__price {
+                        .product-details__price-label {
+                            font-size: 22px;
+                        }
+                        .product-details__price-value {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .product-details__description {
+                    .product-details__description-title {
+                        font-size: 22px;
+                    }
+                    
+                    .product-details__description-text {
+                        font-size: 18px;
+                    }
+                }
+
+                .product-details__stock {
+                    .product-details__stock-wrapper {
+                        .product-details__stock-label {
+                            font-size: 22px;
+                        }
+                    }
+
+                    .product-details__quantity {
+                        .product-details__quantity-value {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

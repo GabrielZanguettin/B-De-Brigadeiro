@@ -95,4 +95,44 @@
             }
         }
     }
+
+    @media(max-width: 500px) {
+        padding: 75px 0;
+        
+        .popular__products__content {
+
+            .section__subtitle {
+                font-size: 20px;
+            }
+
+            .section__title {
+                font-size: 28px;
+            }
+
+            .product__grid {
+                grid-template-columns: repeat(2, 1fr); // força 2 colunas
+                gap: 20px;
+
+                .product {
+
+                    .product__image {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .product__infos {
+
+                        .product__name {
+                            font-size: 18px;
+                        }
+
+                        .product__price {
+                            font-size: 16px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }

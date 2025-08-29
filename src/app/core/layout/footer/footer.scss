@@ -95,4 +95,15 @@
             color: #fff;
         }
     }
+
+    @media (max-width: 426px) {
+        .footer__content {
+            display: block;
+            padding: 0 24px 115px 24px;
+
+            .footer__info {
+                margin-bottom: 64px;
+            }
+        }
+    }
 }

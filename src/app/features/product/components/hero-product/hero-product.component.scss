@@ -26,7 +26,7 @@
             .hero__breadcrumb-separator,
             .hero__breadcrumb-item--active {
                 color: #DB6885;
-            }   
+            }
         }
 
         .hero__title {
@@ -36,5 +36,25 @@
             color: #2F3137;
             margin: 0;
         }
+    }
+
+    @media (max-width: 500px) {
+        padding: 75px 0;
+
+        .hero__content {
+
+            .hero__breadcrumb {
+
+                .hero__breadcrumb-item,
+                .hero__breadcrumb-separator {
+                    font-size: 20px;
+                }
+            }
+
+            .hero__title {
+                font-size: 38px;
+            }
+        }
+
     }
 }
