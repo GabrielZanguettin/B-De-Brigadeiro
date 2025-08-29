@@ -88,3 +88,9 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width: 400px) {
+  .sidebar__content {
+    width: 250px;
+  }
+}
