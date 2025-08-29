@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Product } from '../../shared';
+import { Product } from '../../shared/types';
 import { PopularProductsComponent } from '../../shared/components/popular-products/popular-products.component';
 import { HeroProductComponent } from './components/hero-product/hero-product.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';

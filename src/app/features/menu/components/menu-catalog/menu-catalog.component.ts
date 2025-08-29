@@ -25,6 +25,7 @@ export class MenuCatalogComponent {
   ];
 
   goToProduct(product: { slug: string }) {
-    this.nav.hard(this.nav.productLink(product.slug)); // full reload
+    this.nav.navigate(this.nav.productLink(product.slug));
   }
+
 }

@@ -4,13 +4,13 @@
             <img class="logo__image" src="assets/b-de-brigadeiro-logo.png" alt="Logo B de Brigadeiro">
         </div>
         <nav class="nav__menu desktop__menu">
-            <a class="nav__link nav__link--home" [attr.href]="nav.href(nav.homeLink())">Página inicial</a>
+            <a class="nav__link nav__link--home" (click)="nav.navigate(nav.homeLink())">Página inicial</a>
 
-            <a class="nav__link nav__link--menu" [attr.href]="nav.href(nav.menuLink())">Menu</a>
+            <a class="nav__link nav__link--menu" (click)="nav.navigate(nav.menuLink())">Menu</a>
 
-            <a class="nav__link nav__link--login" [attr.href]="nav.href(['/login'])">Login</a>
+            <!-- <a class="nav__link nav__link--login" [attr.href]="nav.href(['/login'])">Login</a> -->
 
-            <a class="nav__link nav__link--contact" [attr.href]="nav.href(['/contato'])">Entre em contato</a>
+            <a class="nav__link nav__link--contact" >Entre em contato</a>
         </nav>
 
         <button class="hamburger__button" (click)="onHamburgerClick()">

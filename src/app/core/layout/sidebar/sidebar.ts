@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { NavigatorService } from '../../../shared/services/navigator.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -11,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 export class SidebarComponent {
   @Input() isOpen = false;
   @Output() close = new EventEmitter<void>();
+
+  constructor(public nav: NavigatorService) {}
 
   onClose() { this.close.emit(); }
 

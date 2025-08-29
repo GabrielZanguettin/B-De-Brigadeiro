@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigatorService } from '../../../../shared/services/navigator.service';
 
 @Component({
   selector: 'app-hero-header',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './hero-header.component.scss'
 })
 export class HeroHeaderComponent {
-
+  constructor(public nav: NavigatorService) {}
 }

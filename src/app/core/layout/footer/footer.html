@@ -20,9 +20,9 @@
     <div class="footer__links">
       <h2>Links rápidos</h2>
       <nav>
-        <a class="footer__link footer__link--home" [attr.href]="nav.href(nav.homeLink())">Página inicial</a>
-        <a href="" class="footer__link footer__link--financas">Finanças</a>
-        <a class="footer__link footer__link--menu" [attr.href]="nav.href(nav.menuLink())">Menu</a>
+        <a class="footer__link footer__link--home" (click)="nav.navigate(nav.homeLink())">Página inicial</a>
+        <!-- <a href="" class="footer__link footer__link--financas">Finanças</a> -->
+        <a class="footer__link footer__link--menu" (click)="nav.navigate(nav.menuLink())">Menu</a>
       </nav>
     </div>
   </div>
