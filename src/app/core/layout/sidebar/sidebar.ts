@@ -25,4 +25,13 @@ export class SidebarComponent {
     }
   }
 
+  contact() {
+    window.open(
+      'https://wa.me/5514998099579',
+      '_blank'
+    );
+    this.onClose();
+  }
+
+
 }

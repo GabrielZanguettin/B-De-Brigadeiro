@@ -35,11 +35,11 @@ export const products: Product[] = [
     },
     {
         id: 32275,
-        name: 'Óreo',
+        name: 'Oreo',
         price: 'R$3,00',
         slug: 'brigadeiro-de-oreo-32275',
         base: 'brigadeiro-de-oreo',
-        description: 'Chocolate macio por dentro, pedacinhos de biscoito por fora: o Óreo une notas de cacau e baunilha com uma crocância irresistível. Ideal para quem ama texturas e quer um doce que vai do cremoso ao crocante em segundos.'
+        description: 'Chocolate macio por dentro, pedacinhos de biscoito por fora: o Oreo une notas de cacau e baunilha com uma crocância irresistível. Ideal para quem ama texturas e quer um doce que vai do cremoso ao crocante em segundos.'
     },
     {
         id: 14182,
