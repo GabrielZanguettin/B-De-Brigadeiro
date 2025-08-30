@@ -19,7 +19,7 @@
             </div>
             <div class="menu-catalog__grid">
                 <div class="product" *ngFor="let product of products">
-                    <div class="product__image">
+                    <div class="product__image" (click)="goToProduct(product)">
                         <picture>
                             <source [attr.srcset]="
         'assets/products/' + product.base + '-320.avif 320w, ' +
