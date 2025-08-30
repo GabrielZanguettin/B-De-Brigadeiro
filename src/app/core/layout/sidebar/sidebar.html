@@ -8,9 +8,9 @@
     </header>
 
     <nav class="sidebar__nav">
-      <a class="sidebar__link sidebar__link--home" (click)="nav.navigate(nav.homeLink())">Página inicial</a>
+      <a class="sidebar__link sidebar__link--home" (click)="onClose(); nav.navigate(nav.homeLink())">Página inicial</a>
 <!--       <a class="sidebar__link sidebar__link--financas">Finanças</a> -->
-      <a class="sidebar__link sidebar__link--menu" (click)="nav.navigate(nav.menuLink())">Menu</a>
+      <a class="sidebar__link sidebar__link--menu" (click)="onClose(); nav.navigate(nav.menuLink())">Menu</a>
     </nav>
 
     <div class="sidebar__actions">

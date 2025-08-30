@@ -13,9 +13,11 @@ export class SidebarComponent {
   @Input() isOpen = false;
   @Output() close = new EventEmitter<void>();
 
-  constructor(public nav: NavigatorService) {}
+  constructor(public nav: NavigatorService) { }
 
-  onClose() { this.close.emit(); }
+  onClose() {
+    this.close.emit();
+  }
 
   onBackdropClick(event: Event) {
     if (event.target === event.currentTarget) {
