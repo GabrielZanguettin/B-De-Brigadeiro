@@ -4,7 +4,8 @@
   status = 301
   force = true
 
+# SPA fallback para a página 404 prerenderizada
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/404/index.html"
   status = 200

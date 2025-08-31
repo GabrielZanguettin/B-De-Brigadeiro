@@ -8,12 +8,8 @@
         gap: 16px;
 
         .hero__breadcrumb {
-            display: grid;
-            grid-auto-flow: column;
-            align-items: center;
-            column-gap: 7px;
-
-            grid-template-columns: minmax(0, 1fr) auto auto auto auto;
+            display: flex;
+            gap: 7px;
 
             .hero__breadcrumb-item,
             .hero__breadcrumb-separator {
