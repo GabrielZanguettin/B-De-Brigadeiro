@@ -1,7 +1,6 @@
 import { RenderMode, ServerRoute } from '@angular/ssr';
 import { products } from './data/products';
 
-
 export const serverRoutes: ServerRoute[] = [
   { path: '', renderMode: RenderMode.Prerender },
   { path: 'menu', renderMode: RenderMode.Prerender },
@@ -12,5 +11,5 @@ export const serverRoutes: ServerRoute[] = [
       return products.map(p => ({ slug: p.slug }));
     },
   },
-  { path: '**', renderMode: RenderMode.Prerender }
+  { path: '**', renderMode: RenderMode.Client },
 ];
