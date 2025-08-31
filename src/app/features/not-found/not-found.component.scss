@@ -1,0 +1,47 @@
+.not-found {
+    padding: 215px 0;
+
+    .not-found__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        h1, p {
+            margin: 0;
+        }
+
+        h1 {
+            font-family: "Fredoka";
+            font-weight: 600;
+            font-size: 28px;
+            color: #707070;
+        }
+
+        p {
+            font-family: "Figtree";
+            font-weight: 600;
+            font-size: 54px;
+            color: #2F3137;
+            text-align: center;
+        }
+
+        .btn__outline {
+            font-family: "Figtree";
+            font-weight: 500;
+            padding: 20px 40px;
+            border-radius: 32px;
+            border: 1px solid #DB6885;
+            cursor: pointer;
+            color: #DB6885;
+            background: transparent;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background: #DB6885;
+                color: #fff;
+            }
+        }
+    }
+}

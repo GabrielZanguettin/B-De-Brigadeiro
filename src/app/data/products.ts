@@ -34,12 +34,12 @@ export const products: Product[] = [
         description: 'Uma explosão de cor e alegria! O brigadeiro Confete combina massa cremosa de chocolate com confeitos crocantes, criando um contraste divertido a cada mordida. É o queridinho das crianças e a escolha perfeita para deixar qualquer momento mais festivo.'
     },
     {
-        id: 32275,
-        name: 'Oreo',
+        id: 11110,
+        name: 'Ovomaltine',
         price: 'R$3,00',
-        slug: 'brigadeiro-de-oreo-32275',
-        base: 'brigadeiro-de-oreo',
-        description: 'Chocolate macio por dentro, pedacinhos de biscoito por fora: o Oreo une notas de cacau e baunilha com uma crocância irresistível. Ideal para quem ama texturas e quer um doce que vai do cremoso ao crocante em segundos.'
+        slug: 'brigadeiro-de-ovomaltine-11110',
+        base: 'brigadeiro-ovomaltine',
+        description: 'Para os fãs do crocante malteado: massa de brigadeiro cremosa com granulado de Ovomaltine que estala a cada mordida. O resultado é um equilíbrio perfeito entre doçura, sabor de chocolate e aquele toque inconfundível de malte.'
     },
     {
         id: 14182,
@@ -58,11 +58,51 @@ export const products: Product[] = [
         description: 'Cremoso de leite Ninho, generoso de creme de avelã: um encontro de sabores que é puro carinho. A suavidade do leite em pó equilibra o chocolate da avelã, entregando um doce rico, envolvente e absolutamente viciante.'
     },
     {
-        id: 11110,
-        name: 'Ovomaltine',
+        id: 32275,
+        name: 'Oreo',
         price: 'R$3,00',
-        slug: 'brigadeiro-de-ovomaltine-11110',
-        base: 'brigadeiro-ovomaltine',
-        description: 'Para os fãs do crocante malteado: massa de brigadeiro cremosa com granulado de Ovomaltine que estala a cada mordida. O resultado é um equilíbrio perfeito entre doçura, sabor de chocolate e aquele toque inconfundível de malte.'
+        slug: 'brigadeiro-de-oreo-32275',
+        base: 'brigadeiro-de-oreo',
+        description: 'Chocolate macio por dentro, pedacinhos de biscoito por fora: o Oreo une notas de cacau e baunilha com uma crocância irresistível. Ideal para quem ama texturas e quer um doce que vai do cremoso ao crocante em segundos.'
     },
+    {
+        id: 44521,
+        name: 'Ouro Branco',
+        price: 'R$3,00',
+        slug: 'brigadeiro-ouro-branco-44521',
+        base: 'brigadeiro-ouro-branco',
+        description: 'Inspirado no famoso bombom: massa cremosa de brigadeiro branco, envolvida em chocolate ao leite e finalizada com crocante delicado. Uma combinação sofisticada que mistura suavidade e intensidade em cada mordida.'
+    },
+    {
+        id: 55632,
+        name: 'Prestígio',
+        price: 'R$3,00',
+        slug: 'brigadeiro-de-prestigio-55632',
+        base: 'brigadeiro-de-prestigio',
+        description: 'Clássico que une coco e chocolate: recheio macio de coco, envolvido por camada de chocolate brilhante. Uma explosão tropical que equilibra frescor e intensidade do cacau.'
+    },
+    {
+        id: 67841,
+        name: 'Nesquik',
+        price: 'R$3,00',
+        slug: 'brigadeiro-de-nesquik-67841',
+        base: 'brigadeiro-de-nesquik',
+        description: 'Com sabor marcante de morango, o brigadeiro de Nesquik tem massa rosada, leve e aromática. Finalizado com açúcar refinado, conquista pelo visual alegre e pelo sabor nostálgico da infância.'
+    },
+    {
+        id: 78952,
+        name: 'Ferrero Rocher',
+        price: 'R$3,00',
+        slug: 'brigadeiro-ferrero-rocher-78952',
+        base: 'brigadeiro-ferrero-rocher',
+        description: 'Sofisticação em forma de brigadeiro: massa de avelã cremosa, cobertura de chocolate ao leite e crocantes pedaços de wafer. Inspirado no bombom clássico, traz textura e sabor únicos.'
+    },
+    {
+        id: 89063,
+        name: 'Uva',
+        price: 'R$3,00',
+        slug: 'brigadeiro-de-uva-89063',
+        base: 'brigadeiro-de-uva',
+        description: 'Um toque de frescor no brigadeiro: massa branca cremosa recheada com uva fresca no interior. Finalizado com açúcar cristal, entrega surpresa suculenta a cada mordida.'
+    }
 ];

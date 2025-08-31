@@ -9,7 +9,7 @@ export default function render() {
     ...appConfig,
     providers: [
       ...(appConfig.providers ?? []),
-      provideServerRouting(serverRoutes), // já usa o app.routes.server.ts
+      provideServerRouting(serverRoutes),
     ],
   });
 }
