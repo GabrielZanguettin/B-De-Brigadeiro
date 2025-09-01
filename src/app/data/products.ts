@@ -115,7 +115,7 @@ export const products: Product[] = [
     },
     {
         id: 99221,
-        name: 'Caixinha com 2 brigadeiros',
+        name: 'Caixa com 2 unidades',
         price: 'R$6,00',
         slug: 'caixinha-dois-brigadeiros-99221',
         base: 'caixinha-dois-brigadeiros',
@@ -123,7 +123,7 @@ export const products: Product[] = [
     },
     {
         id: 99332,
-        name: 'Caixinha com 4 brigadeiros',
+        name: 'Caixa com 4 unidades',
         price: 'R$10,00',
         slug: 'caixinha-quatro-brigadeiros-99332',
         base: 'caixinha-quatro-brigadeiros',
