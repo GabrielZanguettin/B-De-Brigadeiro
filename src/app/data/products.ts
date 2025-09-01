@@ -104,5 +104,29 @@ export const products: Product[] = [
         slug: 'brigadeiro-de-uva-89063',
         base: 'brigadeiro-de-uva',
         description: 'Um toque de frescor no brigadeiro: massa branca cremosa recheada com uva fresca no interior. Finalizado com açúcar cristal, entrega surpresa suculenta a cada mordida.'
+    },
+    {
+        id: 99114,
+        name: 'Bis',
+        price: 'R$3,00',
+        slug: 'brigadeiro-de-bis-99114',
+        base: 'brigadeiro-de-bis',
+        description: 'Inspirado no clássico chocolate crocante Bis: massa de brigadeiro cremosa com pedacinhos de wafer cobertos de chocolate, garantindo textura crocante e sabor inconfundível. Uma combinação que une cremosidade e crocância em cada mordida.'
+    },
+    {
+        id: 99221,
+        name: 'Caixinha com 2 brigadeiros',
+        price: 'R$6,00',
+        slug: 'caixinha-dois-brigadeiros-99221',
+        base: 'caixinha-dois-brigadeiros',
+        description: 'Uma caixinha prática e charmosa com 2 brigadeiros à sua escolha. Ideal para presentear alguém especial ou para saborear um momento doce sem exagero.'
+    },
+    {
+        id: 99332,
+        name: 'Caixinha com 4 brigadeiros',
+        price: 'R$10,00',
+        slug: 'caixinha-quatro-brigadeiros-99332',
+        base: 'caixinha-quatro-brigadeiros',
+        description: 'Perfeita para compartilhar ou se deliciar em mais momentos: caixinha com 4 brigadeiros sortidos, trazendo variedade e sabor em cada mordida.'
     }
 ];

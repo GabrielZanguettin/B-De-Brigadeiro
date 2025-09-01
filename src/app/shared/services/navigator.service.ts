@@ -7,6 +7,7 @@ export class NavigatorService {
 
   homeLink()   { return ['/home']; }
   menuLink()   { return ['/menu']; }
+  cartLink()   { return ['/carrinho']; }
   productLink(slug: string) { return ['/', slug, 'b']; }
 
   navigate(commands: any[], extras?: NavigationExtras) {
