@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
   constructor(
     private router: Router,
     private ar: ActivatedRoute,
-    public  nav: NavigatorService,
+    public nav: NavigatorService
   ) {}
 
   ngOnInit(): void {

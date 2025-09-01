@@ -8,5 +8,5 @@ import { NavigatorService } from '../../../shared/services/navigator.service';
   styleUrl: './footer.scss'
 })
 export class FooterComponent {
-  constructor(public  nav: NavigatorService,) {}
+  constructor(public nav: NavigatorService) {}
 }

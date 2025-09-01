@@ -11,7 +11,7 @@ export const serverRoutes: ServerRoute[] = [
       return products.map(p => ({ slug: p.slug }));
     },
   },
-  { path: '404', renderMode: RenderMode.Prerender }, // 404 prerenderizada
-  { path: 'home', renderMode: RenderMode.Client },   // existe no app (redirect)
-  { path: '**', renderMode: RenderMode.Client },     // curinga deve existir no server
+  { path: '404', renderMode: RenderMode.Prerender },
+  { path: 'home', renderMode: RenderMode.Client },
+  { path: '**', renderMode: RenderMode.Client },
 ];

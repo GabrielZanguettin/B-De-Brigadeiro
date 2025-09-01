@@ -8,5 +8,5 @@ import { NavigatorService } from '../../shared/services/navigator.service';
   styleUrl: './not-found.component.scss'
 })
 export class NotFoundComponent {
-  constructor(public  nav: NavigatorService,) {}
+  constructor(public nav: NavigatorService) {}
 }
