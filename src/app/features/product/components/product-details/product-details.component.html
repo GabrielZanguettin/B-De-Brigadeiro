@@ -53,6 +53,12 @@
                     </div>
                 </div>
             </div> -->
+            <div class="product-details__actions">
+                <button class="product-details__btn product-details__btn--buy"
+                    *ngIf="canBuy(product)" type="button">
+                    Adicionar ao carrinho
+                </button>
+            </div>
         </div>
     </div>
 </section>
