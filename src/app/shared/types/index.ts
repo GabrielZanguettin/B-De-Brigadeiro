@@ -6,6 +6,7 @@ export interface Product {
   base: string;
   description: string;
   type: ProductType;
+  capacity?: number;
 }
 
 export enum ProductType {

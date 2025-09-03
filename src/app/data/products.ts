@@ -134,7 +134,8 @@ export const products: Product[] = [
         slug: 'caixinha-dois-brigadeiros-99221',
         base: 'caixinha-dois-brigadeiros',
         description: 'Uma caixinha prática e charmosa com 2 brigadeiros à sua escolha. Ideal para presentear alguém especial ou para saborear um momento doce sem exagero.',
-        type: ProductType.Caixa
+        type: ProductType.Caixa,
+        capacity: 2
     },
     {
         id: 99332,
@@ -143,6 +144,7 @@ export const products: Product[] = [
         slug: 'caixinha-quatro-brigadeiros-99332',
         base: 'caixinha-quatro-brigadeiros',
         description: 'Perfeita para compartilhar ou se deliciar em mais momentos: caixinha com 4 brigadeiros sortidos, trazendo variedade e sabor em cada mordida.',
-        type: ProductType.Caixa
+        type: ProductType.Caixa,
+        capacity: 4
     }
 ];

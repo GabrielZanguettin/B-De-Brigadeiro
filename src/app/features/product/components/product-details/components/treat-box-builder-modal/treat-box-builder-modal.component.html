@@ -1,13 +1,20 @@
 <div class="modal__overlay">
     <div class="modal__content">
         <div class="modal__header">
-            <h2>Sua caixinha</h2>
-            <button class="btn-close-modal" (click)="closeModal()">
+            <h2 *ngIf="step === 1">Sua caixinha</h2>
+            <h2 *ngIf="step === 2">Monte sua caixinha</h2>
+
+            <button *ngIf="step === 1" class="btn-close-modal" (click)="closeModal()">
                 <img src="assets/close.svg" alt="">
             </button>
+
+            <button *ngIf="step === 2" class="btn-back-modal" (click)="prevStep()">
+                <img src="assets/arrow-left.svg" alt="">
+            </button>
+
         </div>
         <div class="modal__body">
-            <div class="modal__section modal__section--quantity">
+            <div *ngIf="step === 1" class="modal__section modal__section--quantity">
                 <h2 class="modal__title" id="modal-quantity-title">Quantas caixinhas você quer?</h2>
 
                 <div class="modal__quantity">
@@ -15,13 +22,15 @@
                         <h3 class="modal__label">Quantidade:</h3>
 
                         <div class="modal__quantity-controls">
-                            <button class="modal__btn modal__btn--qty modal__btn--decrement" type="button">
+                            <button class="modal__btn modal__btn--qty modal__btn--decrement" (click)="decrement()"
+                                type="button">
                                 <i class="fas fa-minus modal__icon"></i>
                             </button>
 
-                            <span class="modal__quantity-value">1</span>
+                            <span class="modal__quantity-value">{{ quantity }}</span>
 
-                            <button class="modal__btn modal__btn--qty modal__btn--increment" type="button">
+                            <button class="modal__btn modal__btn--qty modal__btn--increment" (click)="increment()"
+                                type="button">
                                 <i class="fas fa-plus modal__icon"></i>
                             </button>
                         </div>
@@ -29,10 +38,41 @@
                 </div>
             </div>
 
+            <div *ngIf="step === 2" class="modal__section modal__section--boxes">
+                <h2 class="modal__title">Suas caixinhas</h2>
+
+                <div *ngFor="let _ of quantityArray; let i = index; trackBy: trackByIndex" class="modal__box-item">
+                    <h2>Caixinha {{ i + 1 }}</h2>
+                    <div class="multiselect-container" (click)="toggleDropdown()" tabindex="0" (blur)="closeDropdown()">
+                        <div class="multiselect-input">
+                            <span class="select-unit-label" *ngIf="selectedProducts.length === 0">Selecione...</span>
+
+                            <div class="chip" *ngFor="let product of selectedProducts">
+                                <span>{{ product.name }}</span>
+                                <img src="assets/remove-unit.svg" alt="Ícone remover produto"
+                                    (click)="removeSelectedProduct(product, $event)"
+                                    title="Remover produto selecionado" />
+                            </div>
+                        </div>
+
+                        <div class="dropdown" *ngIf="dropdownOpen">
+                            <div class="dropdown-item" *ngFor="let product of doceOptions"
+                                (click)="toggleSelectProduct(product, $event)">
+                                <input type="checkbox" [checked]="isProductSelected(product)" />
+                                {{ product.name }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         <div class="modal__footer">
             <button class="modal__btn modal__btn--secondary" (click)="closeModal()">Cancelar</button>
-            <button class="modal__btn modal__btn--primary">Avançar</button>
+            <button class="modal__btn modal__btn--primary" (click)="step === 1 ? nextStep() : adicionarAoCarrinho()">
+                {{ step === 1 ? 'Avançar' : 'Adicionar ao carrinho' }}
+            </button>
         </div>
     </div>
 </div>
