@@ -55,7 +55,7 @@
             </div> -->
             <div class="product-details__actions">
                 <button class="product-details__btn product-details__btn--buy"
-                    *ngIf="canBuy(product)" type="button">
+                    *ngIf="canBuy(product)" (click)="openTreatBoxBuilderModal()" type="button">
                     Adicionar ao carrinho
                 </button>
             </div>

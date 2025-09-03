@@ -1,0 +1,180 @@
+.modal__overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1080;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    animation: overlay-fade-in 180ms ease-out both;
+    will-change: opacity;
+}
+
+@keyframes overlay-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal__content {
+    width: min(520px, calc(100vw - 32px));
+    background: #F6F3F4;
+    border-radius: 15px;
+    animation: modal-slide-down 0.3s;
+
+    .modal__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border: none;
+        border-bottom: 1px solid #C8CCDB;
+
+        h2 {
+            font-family: "Figtree";
+            font-weight: 600;
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .btn-close-modal {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+    }
+
+    .modal__body {
+        padding: 2rem 1rem;
+
+        .modal__title {
+            font-family: "Fredoka";
+            font-weight: 600;
+            font-size: 20px;
+            color: #DB6885;
+            margin: 0;
+        }
+
+        .modal__section.modal__section--quantity {
+            --qty-border: #C8CCDB;
+            --qty-radius: 10px;
+
+            .modal__quantity-wrapper {
+                display: flex;
+                align-items: center;
+                margin-top: 24px;
+                gap: 12px;
+            }
+
+            .modal__label {
+                font-family: "Figtree";
+                font-weight: 600;
+                font-size: 18px;
+                color: #2F3137;
+                margin: 0;
+            }
+
+            .modal__quantity-controls {
+                display: inline-flex;
+                align-items: center;
+                background: #fff;
+                border: 1px solid var(--qty-border);
+                border-radius: var(--qty-radius);
+                overflow: hidden;
+            }
+
+            .modal__btn--qty,
+            .modal__quantity-value {
+                border: 0;
+            }
+
+            .modal__btn--qty {
+                background: transparent;
+                padding: 14px 18px;
+                cursor: pointer;
+
+                &:hover {
+                    background: #f7f8fb;
+                }
+            }
+
+            .modal__quantity-value {
+                min-width: 2ch;
+                text-align: center;
+                padding: 8px 12px;
+                font-family: "Figtree";
+                font-weight: 600;
+                font-size: 22px;
+                color: #343434;
+            }
+
+            .modal__quantity-controls>*+* {
+                border-inline-start: 1px solid var(--qty-border);
+            }
+
+        }
+
+    }
+
+    .modal__footer {
+        display: flex;
+        justify-content: end;
+        gap: 15px;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-top: 1px solid #C8CCDB;
+
+        .modal__btn--secondary {
+            background: #f9fafb;
+            border: 1px solid #C8CCDB;
+            color: #6b7280;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background: #edeff1;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(107, 114, 128, 0.1);
+            }
+
+        }
+
+        .modal__btn--primary {
+            background: #DB6885;
+            border: 1px solid #DB6885;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background: #c65d78;
+            }
+        }
+    }
+}
+
+@keyframes modal-slide-down {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
