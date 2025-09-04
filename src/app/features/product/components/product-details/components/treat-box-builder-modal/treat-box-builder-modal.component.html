@@ -11,9 +11,10 @@
             <button *ngIf="step === 2" class="btn-back-modal" (click)="prevStep()">
                 <img src="assets/arrow-left.svg" alt="">
             </button>
-
         </div>
+
         <div class="modal__body">
+            <!-- STEP 1 -->
             <div *ngIf="step === 1" class="modal__section modal__section--quantity">
                 <h2 class="modal__title" id="modal-quantity-title">Quantas caixinhas você quer?</h2>
 
@@ -38,36 +39,36 @@
                 </div>
             </div>
 
-            <div *ngIf="step === 2" class="modal__section modal__section--boxes">
-                <h2 class="modal__title">Suas caixinhas</h2>
+            <!-- STEP 2 -->
+            <div *ngIf="step === 2" class="modal__section modal__section--builder">
+                <h2 class="modal__title modal__title--builder">Escolha os doces</h2>
 
-                <div *ngFor="let _ of quantityArray; let i = index; trackBy: trackByIndex" class="modal__box-item">
-                    <h2>Caixinha {{ i + 1 }}</h2>
-                    <div class="multiselect-container" (click)="toggleDropdown()" tabindex="0" (blur)="closeDropdown()">
-                        <div class="multiselect-input">
-                            <span class="select-unit-label" *ngIf="selectedProducts.length === 0">Selecione...</span>
+                <div class="builder">
+                    <div class="builder__item" *ngFor="let doce of doceOptions; let i = index; trackBy: trackByIndex">
+                        <span class="builder__item-name">{{ doce.name }}</span>
 
-                            <div class="chip" *ngFor="let product of selectedProducts">
-                                <span>{{ product.name }}</span>
-                                <img src="assets/remove-unit.svg" alt="Ícone remover produto"
-                                    (click)="removeSelectedProduct(product, $event)"
-                                    title="Remover produto selecionado" />
+                        <div class="builder__qty">
+                            <div class="builder__qty-wrapper">
+                                <div class="builder__qty-controls">
+                                    <button class="modal__btn builder__btn builder__btn--qty builder__btn--decrement"
+                                        (click)="decrement()" type="button">
+                                        <i class="fas fa-minus builder__icon"></i>
+                                    </button>
+
+                                    <span class="builder__qty-value">{{ quantity }}</span>
+
+                                    <button class="modal__btn builder__btn builder__btn--qty builder__btn--increment"
+                                        (click)="increment()" type="button">
+                                        <i class="fas fa-plus builder__icon"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="dropdown" *ngIf="dropdownOpen">
-                            <div class="dropdown-item" *ngFor="let product of doceOptions"
-                                (click)="toggleSelectProduct(product, $event)">
-                                <input type="checkbox" [checked]="isProductSelected(product)" />
-                                {{ product.name }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </div> <!-- /.builder__item -->
+                </div> <!-- /.builder -->
             </div>
-
-
         </div>
+
         <div class="modal__footer">
             <button class="modal__btn modal__btn--secondary" (click)="closeModal()">Cancelar</button>
             <button class="modal__btn modal__btn--primary" (click)="step === 1 ? nextStep() : adicionarAoCarrinho()">
