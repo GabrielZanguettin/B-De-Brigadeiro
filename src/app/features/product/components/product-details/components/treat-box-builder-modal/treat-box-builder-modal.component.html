@@ -39,33 +39,38 @@
                 </div>
             </div>
 
-            <!-- STEP 2 -->
             <div *ngIf="step === 2" class="modal__section modal__section--builder">
                 <h2 class="modal__title modal__title--builder">Escolha os doces</h2>
 
                 <div class="builder">
-                    <div class="builder__item" *ngFor="let doce of doceOptions; let i = index; trackBy: trackByIndex">
-                        <span class="builder__item-name">{{ doce.name }}</span>
+                    <div class="builder__item"
+                        *ngFor="let product of productOptions; let i = index; trackBy: trackByIndex">
+                        <span class="builder__item-name">{{ product.name }}</span>
 
                         <div class="builder__qty">
                             <div class="builder__qty-wrapper">
                                 <div class="builder__qty-controls">
                                     <button class="modal__btn builder__btn builder__btn--qty builder__btn--decrement"
-                                        (click)="decrement()" type="button">
+                                        (click)="decreaseProduct(i)" type="button">
                                         <i class="fas fa-minus builder__icon"></i>
                                     </button>
 
-                                    <span class="builder__qty-value">{{ quantity }}</span>
+                                    <span class="builder__qty-value">{{ selectedProducts[i].quantity }}</span>
 
                                     <button class="modal__btn builder__btn builder__btn--qty builder__btn--increment"
-                                        (click)="increment()" type="button">
+                                        (click)="increaseProduct(i)" type="button">
                                         <i class="fas fa-plus builder__icon"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- /.builder__item -->
-                </div> <!-- /.builder -->
+                    </div>
+                </div>
+
+                <div class="builder__summary">
+                    <p>{{ totalSelected }} de {{ maxProducts }} selecionados</p>
+                </div>
+
             </div>
         </div>
 
