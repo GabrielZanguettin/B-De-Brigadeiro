@@ -151,29 +151,42 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 12px 16px;
+
+            .builder__item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .builder__btn--qty {
+                    padding: 10px 14px;
+                }
+
+                .builder__qty-value {
+                    padding: 4px 8px;
+                }
+
+                .builder__item-name {
+                    flex: 1;
+                }
+
+                .builder__qty-wrapper {
+                    margin: 0;
+                }
+            }
         }
 
-        .builder__item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .builder__summary {
 
-            .builder__btn--qty {
-                padding: 10px 14px;
-            }
-
-            .builder__qty-value {
-                padding: 4px 8px;
-            }
-
-            .builder__item-name {
-                flex: 1;
-            }
-
-            .builder__qty-wrapper {
+            p {
+                font-family: "Fredoka";
+                font-weight: 600;
+                font-size: 16px;
+                color: #DB6885;
                 margin: 0;
+                margin-top: 1rem;
             }
         }
+
     }
 
 
